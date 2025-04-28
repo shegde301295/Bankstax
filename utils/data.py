@@ -14,7 +14,7 @@ def load_financial_data(file_path):
                      'Total Deposits', 'Loans', 'Non Performing Assets', 'Tier 1 Capital',
                      'Tier 2 Capital', 'Risk Weighted Assets', 'CET1 Ratio', 
                      'Tier 1 Capital Ratio', 'Total Capital Ratio', 'Leverage Ratio',
-                     'Supplementary Tier 1', 'Capital Conservation']
+                     'Supplementary Tier 1']
         
         # Remove the header row since we've used it for column names
         df = df[df['Company'] != 'Company']
