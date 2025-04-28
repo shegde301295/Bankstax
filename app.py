@@ -96,11 +96,11 @@ if df is not None:
         
         # Mock market benchmarks
         market_benchmarks = {
-            'core_deposits_ratio': 75.0,
+            'core_deposits_ratio': 85.0,
             'npa_ratio': 2.0,
-            'liquidity_ratio': 120.0,
+            'liquidity_ratio': 25.0,
             'capital_adequacy_ratio': 12.0,
-            'solvency_ratio': 15.0,
+            'solvency_ratio': 20.0,
             'loan_deposit_ratio': 80.0
         }
         
