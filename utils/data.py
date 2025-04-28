@@ -8,17 +8,14 @@ def load_financial_data(file_path):
         df = pd.read_excel(file_path)
         
         # Rename columns based on first row
-        df.columns = ['Company', 'PAT', 'Depreciation', 'Total Liabilities', 'Cash', 
+        df.columns = ['Company', 'PAT', 'Total Liabilities', 'Cash', 
                      'Total Assets', 'Current Assets', 'Current Liabilities', 
                      'Accounts Receivables', 'Marketable Securities', 'Core Deposits',
                      'Total Deposits', 'Loans', 'Non Performing Assets', 'Tier 1 Capital',
                      'Tier 2 Capital', 'Risk Weighted Assets', 'CET1 Ratio', 
                      'Tier 1 Capital Ratio', 'Total Capital Ratio', 'Leverage Ratio',
-                     'Supplementary Tier 1']    
-       if len(df.columns) == len(expected_columns):
-    df.columns = expected_columns
-else:
-    print("Warning: Number of columns mismatch. Keeping original columns.")
+                     'Supplementary Tier 1', 'Capital Conservation']
+        
         # Remove the header row since we've used it for column names
         df = df[df['Company'] != 'Company']
         
