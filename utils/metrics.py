@@ -96,7 +96,7 @@ def calculate_tier1_capital_ratio(bank_data):
     Calculate Tier 1 Capital ratio
     """
     try:
-        return bank_data['Tier 1 Capital'] 
+        return bank_data['Tier 1 Capital Ratio'] 
     except (KeyError, ZeroDivisionError):
         return None
 
