@@ -220,11 +220,11 @@ if df is not None:
     
         # Mock market benchmarks for stress tests
         stress_benchmarks = {
-        'cet1_ratio': 7.0,
-        'tier1_capital_ratio': 8.5,
-        'total_capital_ratio': 10.5,
+        'cet1_ratio': 4.5,
+        'tier1_capital_ratio': 6,
+        'total_capital_ratio': 8,
         'leverage_ratio': 4.0,
-        'supplementary_tier1_ratio': 7.5   # 🔥 Add benchmark for Supplementary Tier 1
+        'supplementary_tier1_ratio': 3   # 🔥 Add benchmark for Supplementary Tier 1
         }
     
         # Create 2x3 grid (instead of 2x2) for 5 metrics
