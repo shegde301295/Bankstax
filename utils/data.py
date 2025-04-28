@@ -15,7 +15,10 @@ def load_financial_data(file_path):
                      'Tier 2 Capital', 'Risk Weighted Assets', 'CET1 Ratio', 
                      'Tier 1 Capital Ratio', 'Total Capital Ratio', 'Leverage Ratio',
                      'Supplementary Tier 1']
-        
+        if len(df.columns) == len(expected_columns):
+    df.columns = expected_columns
+else:
+    print("Warning: Number of columns mismatch. Keeping original columns.")
         # Remove the header row since we've used it for column names
         df = df[df['Company'] != 'Company']
         
