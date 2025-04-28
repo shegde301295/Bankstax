@@ -106,7 +106,7 @@ def calculate_total_capital_ratio(bank_data):
     """
     try:
         
-        return bank_data['Total Capital Ratio'])
+        return bank_data['Total Capital Ratio']
     except (KeyError, ZeroDivisionError):
         return None
 
