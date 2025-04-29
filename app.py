@@ -224,7 +224,7 @@ if df is not None:
         'tier1_capital_ratio': 6,
         'total_capital_ratio': 8,
         'leverage_ratio': 4.0,
-        'supplementary_tier1_ratio': 3   # 🔥 Add benchmark for Supplementary Tier 1
+        'supplementary_tier1_ratio': 3   # 
         }
     
         # Create 2x3 grid (instead of 2x2) for 5 metrics
